@@ -25,7 +25,7 @@ export default function Home() {
               Criterio 3.- Tiene 16 años o más, nació entre 1982 y 1997 y no cuenta con el nivel de educación obligatorio vigente en el momento en que debía haberlo cursado (secundaria completa).
             </li>
             <li>
-              4.- Criterio 4.- Tiene 16 años o más, nació antes de 1982 y no cuenta con el nivel de educación obligatorio vigente en el momento en que debía haberlo cursado (primaria completa).
+              Criterio 4.- Tiene 16 años o más, nació antes de 1982 y no cuenta con el nivel de educación obligatorio vigente en el momento en que debía haberlo cursado (primaria completa).
             </li>
           </ul>
         </div>

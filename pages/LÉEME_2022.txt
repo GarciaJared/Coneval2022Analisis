@@ -1,0 +1,43 @@
+__________________________________________________________________________
+Metodología para la medición multidimensional de la pobreza en México, 2022
+__________________________________________________________________________
+
+El programa de cálculo de la Medición multidimensional de la pobreza 2022, utiliza como fuente de información la Encuesta Nacional de Ingresos y Gastos de los Hogares (ENIGH) 2022, publicada por el Instituto Nacional de Estadística y Geografía (INEGI) el 26 de julio de 2023.
+
+Para un mejor análisis de la información 2022, consultar las notas técnicas: https://www.coneval.org.mx/Medicion/MP/Paginas/Notas_pobreza_2022.aspx
+
+Este programa de cálculo, al igual que el programa de 2020, presenta cambios respecto al programa de cálculo de 2018 y 2016 en:
+
+1.- Instituciones de salud
+En la tabla de Población, la variable "segpop", con la cual se identifica a la población afiliada o inscrita al Seguro Popular en la ENIGH 2018 y 2016, se reemplaza por la variable “pop_insabi” en la ENIGH 2020 y 2022, la cual identifica a la población afiliada o inscrita al Seguro Popular, o que tiene derecho a los servicios del Instituto de Salud para el Bienestar (INSABI), de acuerdo con el cuestionario de la ENIGH 2020 y 2022.
+
+2.- Ingresos
+En la tabla de Ingresos, se identifican nuevas claves, así como la eliminación de algunas claves de programas sociales, por lo que, se realizaron modificaciones correspondientes al programa de cálculo para la estimación del ingreso monetario y del ingreso por programa de adultos mayores. 
+Las claves que se adicionan en 2020 y 2022 son las siguientes:
+P101: Beca Bienestar para las Familias de Educación Básica (PROSPERA)
+P102: Beca Benito Juárez para Jóvenes de Educación Media Superior
+P103: Beca Jóvenes Escribiendo el Futuro de Educación Superior
+P104: Programa para el Bienestar de las Personas Adultas Mayores
+P105: Pensión para el Bienestar de Personas con Discapacidad
+P106: Apoyo para el Bienestar de los Hijos de Madres Trabajadoras
+P107: Seguro de vida para Jefas de Familia
+P108: Programa Jóvenes Construyendo el Futuro
+Las claves que se eliminan en 2020 y 2022 son las siguientes:
+P042: Beneficio de PROSPERA (OPORTUNIDADES, PROGRESA)
+P044: Beneficio del programa 65 y más
+P046: Beneficio de la Tarjeta SinHambre (PAL)
+P047: Beneficio del programa de Empleo Temporal
+
+3. Discapacidad
+A partir de 2020, el INEGI, a través de la ENIGH capta el grado de dificultad que la población reportó para realizar algunas actividades, en este sentido, las variables sobre discapacidad respecto a la ENIGH 2018 y 2016 cambiaron. 
+En 2020 y 2022 las variables son:
+disc_camin   Discapacidad para caminar 
+disc_ver     Discapacidad para ver
+disc_brazo   Discapacidad de usar brazos 
+disc_apren   Discapacidad para aprender 
+disc_oir     Discapacidad para escuchar 
+disc_vest    Discapacidad para vestirse
+disc_habla   Discapacidad para hablar 
+disc_acti    Discapacidad para realizar actividades diarias 
+
+Por lo anterior, en seguimiento a las recomendaciones del Grupo Washington, se identifica a la población con discapacidad como aquella que reportó "no puedo hacerlo” o "lo hace con mucha dificultad" en al menos alguna de las siguientes actividades: caminar, subir o bajar usando sus piernas; ver (aunque use lentes); mover o usar brazos o manos; aprender, recordar o concentrarse; escuchar (aunque use aparato auditivo); bañarse, vestirse o comer; hablar o comunicarse (por ejemplo, entender o ser entendido por otros); realizar sus actividades diarias por problemas emocionales o mentales (con autonomía e independencia). Para más información se sugiere consultar "Disability Measurement and Monitoring using the Washington Group Disability Questions". Disponible en: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/732254/Disability-Measurement-Monitoring-Washington-Group-_Disability-Questions.pdf (consultado el 10 de agosto de 2023).

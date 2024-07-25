@@ -30,6 +30,7 @@ export function MyChart() {
 
   useEffect(() => {
     console.log("Fetching data from /api/resultados");
+  
     fetch("/api/resultados")
       .then((res) => {
         console.log("Received response", res);
@@ -40,21 +41,27 @@ export function MyChart() {
       })
       .then((data) => {
         console.log("Parsed JSON data", data);
-        
-        const chartData: { name: CriterioName; value: number }[] = [
-          { name: "criterio1", value: parseFloat(data.Porcentaje[0].toFixed(2)) },
-          { name: "criterio2", value: parseFloat(data.Porcentaje[1].toFixed(2)) },
-          { name: "criterio3", value: parseFloat(data.Porcentaje[2].toFixed(2)) },
-          { name: "criterio4", value: parseFloat(data.Porcentaje[3].toFixed(2)) },
-        ];
-
-        setData(chartData);
-        console.log("Chart data set in state", chartData);
+  
+        // Verifica la estructura de los datos antes de usar
+        if (data.Porcentaje && Array.isArray(data.Porcentaje) && data.Porcentaje.length >= 4) {
+          const chartData: { name: CriterioName; value: number }[] = [
+            { name: "criterio1", value: parseFloat(data.Porcentaje[0].toFixed(2)) },
+            { name: "criterio2", value: parseFloat(data.Porcentaje[1].toFixed(2)) },
+            { name: "criterio3", value: parseFloat(data.Porcentaje[2].toFixed(2)) },
+            { name: "criterio4", value: parseFloat(data.Porcentaje[3].toFixed(2)) },
+          ];
+  
+          setData(chartData);
+          console.log("Chart data set in state", chartData);
+        } else {
+          console.error("Unexpected data structure", data);
+        }
       })
       .catch((error) => {
         console.error("Error fetching data", error);
       });
   }, []);
+  
 
   if (data.length === 0) {
     return <div>Cargando...</div>;
